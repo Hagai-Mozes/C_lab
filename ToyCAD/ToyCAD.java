@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class ToyCAD {
     private static Shape createShape(String[] inputTokens){
-        String shapeType = inputTokens[1];
+        String shapeType = inputTokens[1].toLowerCase();
         String color = inputTokens[2].toLowerCase();
         double pointAX, pointAY, pointBX, pointBY, pointCX, pointCY, centerX, centerY;
         Point pointA, pointB, pointC, center;
